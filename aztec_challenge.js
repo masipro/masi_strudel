@@ -18,7 +18,7 @@ const melody_3="<c5@3 d5 d#5@3 e5 a5@2 g5 f#5 d#5@3 e5 a5@2 g5 f#5 d#5@3 b4>/2.6
 const melody_3_5="<a4>/21.33"
 //SAMPLES
 await samples({run: 'samples/aztec_challenge/AC_run.wav', aztec:'samples/aztec_challenge/AC_aztec_challenge.wav'}, 'https://raw.githubusercontent.com/masipro/masi_strudel/main/');
-$: arrange([200,silence],[1,sound("aztec")],[85.33, silence],[1,sound("run")],[104,66, silence])
+$: arrange([200,silence],[1,sound("aztec")],[85.33, silence],[1,sound("run")],[104.66, silence])
 //BACKGROUND
 $: arrange(
   [40,note(ambient_40.sound('gm_lead_2_sawtooth').lpf(1250)).pan(0.40)],
